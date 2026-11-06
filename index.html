@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MACNICA Warehouse Operations Desk — offline interactive demonstration">
+  <title>MACNICA · WMS Operations Desk</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div id="app"></div>
+  <dialog id="info-dialog" aria-labelledby="dialog-title">
+    <div class="dialog-heading"><h2 id="dialog-title"></h2><button class="icon-button" data-close-dialog aria-label="Close dialog">×</button></div>
+    <div id="dialog-body"></div>
+    <div class="dialog-actions"><button class="primary-button" data-close-dialog>Got it</button></div>
+  </dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
